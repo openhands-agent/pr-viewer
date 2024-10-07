@@ -27,10 +27,10 @@ const PullRequestViewer: React.FC = () => {
   const [pullRequests, setPullRequests] = useState<PullRequest[]>([]);
 
   useEffect(() => {
-    const fetchRepos = async () => {
+const fetchRepos = async () => {
       try {
         const response = await octokit.repos.listForOrg({
-          org: 'OpenDevin',
+          org: 'All-Hands-AI',
           type: 'all',
         });
         const repoOptions = response.data.map(repo => ({
@@ -54,8 +54,8 @@ const PullRequestViewer: React.FC = () => {
           let hasNextPage = true;
 
           while (hasNextPage) {
-            const response = await octokit.pulls.list({
-              owner: 'OpenDevin',
+const response = await octokit.pulls.list({
+              owner: 'All-Hands-AI',
               repo: selectedRepo.value,
               state: 'open',
               per_page: 100,

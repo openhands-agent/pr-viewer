@@ -1,6 +1,8 @@
 # PR Viewer
 
-This React application allows you to view open pull requests from GitHub repositories in the OpenDevin organization.
+This React application allows you to view open pull requests from GitHub repositories in the All-Hands-AI organization.
+
+This software was created by [OpenHands](https://github.com/All-Hands-AI/OpenHands).
 
 ## Setup
 
@@ -23,7 +25,7 @@ To build the app for production, use: `npm run build`
 
 ## Note
 
-Make sure to replace `your_github_token_here` with an actual GitHub personal access token that has the necessary permissions to read repository and pull request information from the OpenDevin organization.
+Make sure to replace `your_github_token_here` with an actual GitHub personal access token that has the necessary permissions to read repository and pull request information from the All-Hands-AI organization.
 
 ## License
 
